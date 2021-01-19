@@ -1,0 +1,56 @@
+body
+{
+	margin:0;
+	padding: 0;
+	background-color:black;
+	
+}
+
+
+
+.pulse
+{
+	position: absolute;
+	width: 150px;
+	text-align: center;
+	height: 150px;
+	top:50%;
+	left:50%;
+
+	transform: translate(-50%,-50%);
+}
+
+.pulse div
+{
+	position: absolute;
+	border:5px solid #099fff;
+	border-radius: 50%;
+	animation: pulse 1s ease-out infinite  forwards ;
+}
+
+.pulse div:nth-child(2)
+{
+	animation-delay: -0.5s;
+}
+
+@keyframes pulse
+{
+0%
+{
+	top:75px;
+	left:75px;
+	width:0;
+	height: 0;
+	opacity: 1;
+}
+100%
+{
+	top:0;
+	left:0;
+	width:150px;
+	height: 150px;
+	opacity: 0;
+}
+}
+
+
